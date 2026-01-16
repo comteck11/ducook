@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-header {
-    background-image: linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(../images/main-bg.jpg);
-    background-size: cover;
-    background-position: center top;
-}
-body{ 
-    font-family: "Noto Sans",sans-serif;
-}
-h1,h2,h3,h4,h5{   font-family: "Gugi", sans-serif;
-}
-#sns-links {
-   
-    background-image: linear-gradient(to top,rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/sns-bg.jpg');
-    background-size: cover;    
-    background-position: center;             
-}
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+body { font-family: "Noto Sans KR", sans-serif; padding-top: 56px; }
+h1, h2, h3, h4, h5 { font-family: "Gugi", sans-serif; text-transform: lowercase; }
+
+header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('../images/main-bg.jpg') center/cover; }
+#news { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/news-bg.jpg') center/cover; }
+#sns-links { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/sns-bg.jpg') center/cover; }
+
+.card-hover { transition: 0.4s; }
+.card-hover:hover { transform: translateY(-10px); }
+.service-img-circle { width: 90px; height: 90px; object-fit: cover; border: 2px solid #ffc107; }
+
+/* 내비바 메뉴 활성화 효과 */
+.navbar-dark .navbar-nav .nav-link.active { color: #ffc107 !important; border-bottom: 2px solid #ffc107; }
